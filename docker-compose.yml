@@ -1,0 +1,9 @@
+version: "3"  
+services:
+  pdm_api:
+    build: .
+    container_name : "PDM_API_container"
+    ports:
+      - "61234:1234"
+    volumes:
+      - ./app/:/app
